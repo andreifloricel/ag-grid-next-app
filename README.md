@@ -14,7 +14,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Note that the demo of this app connects to a database. If you deploy the project on your own machine, your grid will populate with dummy data in the absence of a database connection. 
+Note that the demo of this app connects to a database. If you deploy the project on your own machine, your grid will populate with dummy data in the absence of a database connection.
 
 Alternatively, you can create your own data source. If you do this, the data should be an array of objects with the following structure:
 
@@ -27,5 +27,5 @@ Alternatively, you can create your own data source. If you do this, the data sho
   "phone": "<phone number>",
   "office": "<city name>",
   "job_title": "<job title>"
- }
+}
 ```

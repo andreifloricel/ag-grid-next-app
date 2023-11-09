@@ -1,5 +1,5 @@
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const StaffInfo = () => {
   const router = useRouter();
@@ -7,9 +7,15 @@ const StaffInfo = () => {
   const [staff, setStaff] = useState({});
 
   useEffect(() => {
-    fetch(`../api/employee/${id}`)
-      .then((response) => response.json())
-      .then((data) => setStaff(data.rows[0]));
+    setStaff({
+      id: id,
+      first_name: "first" + id,
+      last_name: "last" + id,
+      email: "member" + id + "@company.com",
+      phone: "12345" + id,
+      office: "place" + id,
+      job_title: "Worker " + id,
+    });
   }, [id]);
 
   return (

@@ -1,4 +1,4 @@
-import { Pool } from 'pg';
+import { Pool } from "pg";
 
 let connection = new Pool({
   connectionString: process.env.CONNECTION_STRING,

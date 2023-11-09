@@ -1,15 +1,17 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header>
       <ul>
         <li>
-          <Link href="/"><a>Home</a></Link>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
         </li>
-        </ul>
+      </ul>
     </header>
-  )
-}
+  );
+};
 
 export default Header;
